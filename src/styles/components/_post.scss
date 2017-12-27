@@ -1,0 +1,49 @@
+.blog-post {
+    transition: 0.5s all;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+    position: relative;
+
+    &:hover h2::before {
+        width: 105%;
+    }
+
+    h2 {
+        width: fit-content;
+        position: relative;
+        margin-bottom: 0.5em;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -15px;
+            padding: 0 5px;
+            width: 0;
+            margin-top: 0.35em;
+            height: 0.6em;
+            background-color: gold;
+            z-index: -1;
+            transition: 0.2s all;
+        }
+    }
+
+    p {
+        margin: 0.5em 0 2em;
+    }
+
+    &--individual {
+        opacity: 0;
+        animation: fadeIn 0.3s forwards;
+        position: relative;
+    }
+
+    &--date {
+        position: absolute;
+        right: 0;
+        top: -10px;
+        font-size: 4em;
+        color: rgba(0, 0, 0, 0.05);
+        user-select: none;
+        z-index: -1;
+    }
+}

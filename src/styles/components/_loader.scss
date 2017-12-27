@@ -1,0 +1,13 @@
+.loader-container {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loader-1 {
+        width: 20px;
+        height: 20px;
+        background: gold;
+        animation: loadSpinner 2s infinite;
+    }
+}

@@ -1,0 +1,1 @@
+export const WP_URL = "https://52.15.55.242/wp-json/wp/v2/"
